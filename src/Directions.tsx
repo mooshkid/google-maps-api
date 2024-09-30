@@ -1,4 +1,3 @@
-// src/Map.tsx
 import React, { useState } from "react";
 import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer } from "@react-google-maps/api";
 
@@ -12,7 +11,7 @@ const center = {
 	lng: 139.6917,
 };
 
-const Map: React.FC = () => {
+const Directions: React.FC = () => {
 	const [map, setMap] = useState<google.maps.Map | null>(null);
 	const [directionsResponse, setDirectionsResponse] = useState<google.maps.DirectionsResult | null>(null);
 	const [startLocation, setStartLocation] = useState("");
@@ -59,4 +58,4 @@ const Map: React.FC = () => {
 	);
 };
 
-export default Map;
+export default Directions;
